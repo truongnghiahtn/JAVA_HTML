@@ -1,0 +1,157 @@
+.body {
+  margin: 0 auto;
+  height: 480px;
+  overflow: hidden; }
+  .body .instructors {
+    padding: 70px 0; }
+    .body .instructors .parent-card {
+      justify-content: center;
+      position: relative; }
+      .body .instructors .parent-card .test:hover .card {
+        transform: scale(0.91);
+        filter: blur(10px); }
+      .body .instructors .parent-card .test:hover {
+        height: 300px; }
+      .body .instructors .parent-card .test {
+        transition: all 0.25s; }
+        .body .instructors .parent-card .test .card {
+          padding: 10px;
+          position: relative;
+          height: 320px;
+          width: 200px;
+          margin: 0 auto;
+          z-index: 6;
+          background-image: white;
+          border: 1px solid white;
+          text-align: center;
+          transition: all 0.25s;
+          cursor: pointer; }
+          .body .instructors .parent-card .test .card img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            margin: 0 auto; }
+          .body .instructors .parent-card .test .card .detail-card {
+            padding: 15px 0; }
+            .body .instructors .parent-card .test .card .detail-card p {
+              margin-bottom: 0px; }
+          .body .instructors .parent-card .test .card:hover {
+            transform: scale(1.1);
+            -webkit-box-shadow: 0px 0px 23px -15px #302c30;
+            -moz-box-shadow: 0px 0px 23px -15px #302c30;
+            box-shadow: 0px 0px 23px -15px #302c30;
+            z-index: 7;
+            filter: none; }
+            .body .instructors .parent-card .test .card:hover .info-card {
+              opacity: 1;
+              transform: scale(1); }
+              .body .instructors .parent-card .test .card:hover .info-card .info-icon .fa {
+                transform: translate(0px, 0px);
+                transition: all 0.25s; }
+                .body .instructors .parent-card .test .card:hover .info-card .info-icon .fa::after {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  z-index: -1;
+                  transition: all 0.4s;
+                  transform: scale(0); }
+              .body .instructors .parent-card .test .card:hover .info-card .info-icon .fa-facebook {
+                transition-delay: 0.3s; }
+                .body .instructors .parent-card .test .card:hover .info-card .info-icon .fa-facebook:hover::after {
+                  background: #4267b2;
+                  transform: scale(1); }
+              .body .instructors .parent-card .test .card:hover .info-card .info-icon .fa-envelope {
+                transition-delay: 0.4s; }
+                .body .instructors .parent-card .test .card:hover .info-card .info-icon .fa-envelope:hover::after {
+                  background: #d93025;
+                  transform: scale(1); }
+              .body .instructors .parent-card .test .card:hover .info-card .info-icon .fa-twitter {
+                transition-delay: 0.5s; }
+                .body .instructors .parent-card .test .card:hover .info-card .info-icon .fa-twitter:hover::after {
+                  background: #1da1f2;
+                  transform: scale(1); }
+              .body .instructors .parent-card .test .card:hover .info-card .info-icon .fa-youtube-play {
+                transition-delay: 0.6s; }
+                .body .instructors .parent-card .test .card:hover .info-card .info-icon .fa-youtube-play:hover::after {
+                  background: #ff0000;
+                  transform: scale(1); }
+          .body .instructors .parent-card .test .card .info-card {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(48, 44, 48, 0.7);
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 0.5s;
+            color: white;
+            transform: scale(0.5);
+            border-radius: 4px; }
+            .body .instructors .parent-card .test .card .info-card .info-icon {
+              margin-top: 5px;
+              text-align: left;
+              overflow: hidden; }
+              .body .instructors .parent-card .test .card .info-card .info-icon .fa {
+                height: 25px;
+                width: 30px;
+                position: relative;
+                left: 0;
+                line-height: 25px;
+                text-align: center;
+                background: #302c30;
+                margin-bottom: 1px;
+                transform: translate(-30px, 0px);
+                color: rgba(255, 255, 255, 0.7); }
+                .body .instructors .parent-card .test .card .info-card .info-icon .fa:hover {
+                  color: white; }
+            .body .instructors .parent-card .test .card .info-card .view {
+              position: absolute;
+              top: 5px;
+              right: 10px; }
+            .body .instructors .parent-card .test .card .info-card .info {
+              text-align: left;
+              font-size: 14px;
+              margin-top: 10px;
+              padding: 0 5px; }
+              .body .instructors .parent-card .test .card .info-card .info p {
+                margin: 5px 0; }
+            .body .instructors .parent-card .test .card .info-card .card-footer {
+              display: flex;
+              justify-content: center;
+              margin: 0;
+              padding: 0; }
+
+.count_courses {
+  background-image: url(./img/2.jpg);
+  position: relative; }
+  .count_courses::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 203, 84, 0.5);
+    z-index: 5; }
+  .count_courses .count_icon {
+    display: flex;
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 300px; }
+    .count_courses .count_icon .icon {
+      height: 300px;
+      width: 25%;
+      text-align: center;
+      position: relative;
+      z-index: 6;
+      color: white;
+      padding: 60px 0; }
+      .count_courses .count_icon .icon p {
+        font-size: 28px; }
+      .count_courses .count_icon .icon .fa {
+        font-size: 70px; }
+
+/*# sourceMappingURL=index.css.map */
